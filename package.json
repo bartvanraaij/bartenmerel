@@ -1,7 +1,7 @@
 {
-  "name": "jasperspianos",
+  "name": "bartenmerel",
   "version": "1.0.0",
-  "description": "Jaspers Piano's",
+  "description": "Bart & Merel",
   "private": true,
   "scripts": {
     "build-dev:webpack": "webpack",

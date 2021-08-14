@@ -1,6 +1,6 @@
 :root {
   --container: 1024px;
-  --container-padding: 15px;
+  //--container-padding: 15px;
 
 
   --grid-columns: 2;
@@ -16,8 +16,12 @@
   --color-primary: hsl(var(--color-primary-base),var(--color-primary-lightness));
   --color-primary--dark: hsl(var(--color-primary-base),calc(var(--color-primary-lightness) - 10%));
 
-  --font: 'Source Sans Pro', sans-serif;
-  --font-headings: 'Source Serif Pro', serif;
+  //--font: 'Source Sans Pro', sans-serif;
+  //--font: 'Source Serif Pro', sans-serif;
+  //--font-headings: 'Source Serif Pro', serif;
+
+  --font:  'Georgia', sans-serif;
+  --font-headings:  'Georgia', sans-serif;
   --font-size: 17px;
 
  /* --color-maroon: #82171d;
@@ -26,6 +30,8 @@
 
 
   //--color-sand: hsl(36, 68%, 81%);
+
+  //--color-watdan: #a12732;
 
   --color-red: #b51d26;
   --color-red-light: #ce3232;
@@ -42,7 +48,7 @@
     --grid-columns: 1;
     --grid-spacer: 1rem;
 
-    --container: 580px;
+    --container: 100%;
   }
 
 
