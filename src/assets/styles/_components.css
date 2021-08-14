@@ -1,0 +1,83 @@
+
+.c-logo {
+  width: 320px;
+  margin-top: 1rem;
+  max-width: 90vw;
+  display: inline-block;
+}
+
+
+
+ul.c-usps {
+  list-style-type: none;
+  font-size: 1.3rem;
+  line-height: 1.1;
+
+  padding: 0;
+  margin: 2rem 0 2rem 0;
+
+  li {
+    padding-left: 44px;
+    position: relative;
+    margin-bottom: .8em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  span {
+    display: none;
+  }
+
+
+  li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 32px; height: 32px;
+    font-size: 1.4rem;
+    background-image: url(../icons/check.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 960px) {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1.5rem 0;
+
+    li {
+      padding-left: 36px;
+    }
+
+    li:before {
+      width: 28px; height: 28px;
+
+    }
+  }
+}
+
+.c-woman-with-piano {
+
+  @media screen and (max-width: 960px) {
+    margin-top: 1rem;
+  }
+  max-width: 480px;
+
+  svg {
+    width: 100%;
+    height: auto;
+    transform: scale(1.36) translateX(-1.5%);
+    margin-bottom: 12%;
+  }
+
+}
+
+.c-freepik-link-container {
+  display: block;
+  text-align: right;
+}
+.c-freepik-link {
+  font-size: .7rem;
+  text-decoration: none;
+  color: #999;
+  position: relative;
+}

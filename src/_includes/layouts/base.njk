@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg'|url }}">
+  <title>{{ title or site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}" />
+  <meta name="author" content="{{ site.author }}" />
+  <link href="{{ assets.main|url }}" rel="stylesheet"/>
+  <link rel="preload" href="{{ assets.fonts|url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ assets.fonts|url }}"></noscript>
+</head>
+<body>
+
+{#<div class="c-blob">#}
+{#  {% include '../partials/blob.svg' %}#}
+{#</div>#}
+
+<header class="s-container">
+  <a href="{{ '/'|url }}" title="{{ site.title }}">
+    <img src="/assets/images/bart-en-merel.svg" alt="Bart&Merel" class="c-logo"  />
+  </a>
+</header>
+
+<main class="s-container">
+  {{ content | safe }}
+</main>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Dependencies
+/node_modules
+
+# Output directories
+/_site
+
+# Generated file
+/src/_data/assets.json
+.lazyimages.json
+
+# Github pages
+.github/gh-pages*
+
+# Drafts
+src/drafts/*
+
+# Misc
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/

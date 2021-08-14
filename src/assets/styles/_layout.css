@@ -1,0 +1,78 @@
+
+html {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 4rem;
+
+  color: var(--color-text);
+
+
+
+  background-color: var(--color-background);
+  background-image: url(../images/leaves-top-right.svg);
+  background-position: top -20px right -74px;
+  background-repeat: no-repeat;
+  background-size: 600px auto;
+  background-attachment: fixed;
+
+
+  @media screen and (max-width: 480px) {
+    background-size: 320px auto;
+
+  }
+}
+
+html,body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+/*.s-main {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}*/
+
+.s-container {
+  width: var(--container);
+  max-width: 100%;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin: 0 auto;
+}
+
+/*
+.s-container--wider {
+  width: var(--grid-wide);
+}
+
+.s-box {
+  width: var(--grid-small);
+  max-width: 100%;
+}
+*/
+
+.s-grid {
+  display: grid;
+  gap: var(--grid-spacer);
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+
+}
+

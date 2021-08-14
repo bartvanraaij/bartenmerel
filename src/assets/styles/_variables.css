@@ -1,0 +1,49 @@
+:root {
+  --container: 1024px;
+  --container-padding: 15px;
+
+
+  --grid-columns: 2;
+  --grid-spacer: 2rem;
+
+  /* #e91e63 */
+  --color-primary-base: 340, 82%; /*the base color*/
+  --color-primary-lightness: 52%; /*the initial lightness*/
+
+/*  --color-primary: #e91e63;
+  --color-primary--dark: #a41946;*/
+
+  --color-primary: hsl(var(--color-primary-base),var(--color-primary-lightness));
+  --color-primary--dark: hsl(var(--color-primary-base),calc(var(--color-primary-lightness) - 10%));
+
+  --font: 'Source Sans Pro', sans-serif;
+  --font-headings: 'Source Serif Pro', serif;
+  --font-size: 17px;
+
+ /* --color-maroon: #82171d;
+  //--color-sand: #efd4ac;
+  --color-gold: #d4af37;*/
+
+
+  //--color-sand: hsl(36, 68%, 81%);
+
+  --color-red: #b51d26;
+  --color-red-light: #ce3232;
+
+  --color-maroon: #641926;
+  --color-sand: #efd4ac;
+  --color-sand-lighter: #fdecd7;
+
+  --color-background: var(--color-maroon);
+  --color-text: var(--color-sand-lighter);
+
+
+  @media screen and (max-width: 960px) {
+    --grid-columns: 1;
+    --grid-spacer: 1rem;
+
+    --container: 580px;
+  }
+
+
+}

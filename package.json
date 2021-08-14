@@ -1,0 +1,87 @@
+{
+  "name": "jasperspianos",
+  "version": "1.0.0",
+  "description": "Jaspers Piano's",
+  "private": true,
+  "scripts": {
+    "build-dev:webpack": "webpack",
+    "watch:webpack": "webpack --watch",
+    "watch:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "dev": "npm-run-all clean build-dev:webpack --parallel watch:*",
+    "build:webpack": "NODE_ENV=production webpack",
+    "build:eleventy": "ELEVENTY_PATHPREFIX=${ELEVENTY_PATHPREFIX:=/} ELEVENTY_ENV=production eleventy --pathprefix=\"$ELEVENTY_PATHPREFIX\"",
+    "build:purgecss": "purgecss --css '_site/assets/styles/*.min.css' --content '_site/**/*.html' --output '_site/assets/styles/'",
+    "build": "run-s clean build:webpack build:eleventy",
+    "serve:local": "serve _site",
+    "serve": "run-s build serve:local",
+    "clean": "rimraf _site",
+    "format:js": "prettier '**/*.js' --write && eslint '**/*.js' --fix",
+    "format:json": "prettier '**/*.json' --write",
+    "format": "run-s format:*",
+    "lint": "eslint --ext .js ."
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
+    "@fontsource/source-sans-pro": "^4.2.1",
+    "@fontsource/source-serif-pro": "^4.2.1",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9.8.6",
+    "copy-webpack-plugin": "^6.4.1",
+    "css-loader": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "file-loader": "^6.2.0",
+    "glob": "^7.1.6",
+    "html-minifier": "^4.0.0",
+    "html-webpack-plugin": "^4.5.2",
+    "husky": "^4.3.8",
+    "latex.css": "^1.5.0",
+    "lint-staged": "^10.5.4",
+    "luxon": "^1.26.0",
+    "markdown-it": "^11.0.1",
+    "markdown-it-anchor": "^5.3.0",
+    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-image-lazy-loading": "^1.0.2",
+    "markdown-it-link-attributes": "^3.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.35",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.3",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.2",
+    "svg-sprite": "^1.5.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "terser": "^5.6.0",
+    "url-loader": "^4.1.1",
+    "vinyl": "^2.2.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-fix-style-only-entries": "^0.5.2",
+    "webpack-manifest-plugin": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "eslint"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {}
+}
