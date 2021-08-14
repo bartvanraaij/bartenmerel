@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 1.2;
 
   @media screen and (max-width: 960px) {
@@ -26,7 +26,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   margin-bottom: .25rem;
   line-height: 1.2;
 

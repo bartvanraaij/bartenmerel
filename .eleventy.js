@@ -88,13 +88,13 @@ module.exports = function (eleventyConfig) {
         rel: 'noopener',
       },
     })
-    .use(markdownItAnchor, {
-      permalink: true,
-      permalinkClass: 'anchor',
-      permalinkSymbol: '#',
-      permalinkBefore: true,
-      level: 2,
-    })
+    // .use(markdownItAnchor, {
+    //   permalink: true,
+    //   permalinkClass: 'anchor',
+    //   permalinkSymbol: '#',
+    //   permalinkBefore: true,
+    //   level: 2,
+    // })
     .use(markdownItLazyImg)
     .use(markdownitAttrs);
   eleventyConfig.setLibrary('md', markdownLibrary);

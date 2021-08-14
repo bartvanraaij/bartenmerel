@@ -1,6 +1,7 @@
 
 .c-header {
-  padding: 0rem 0 1rem 0;
+  padding: 0 0 1rem 0;
+  padding-bottom: 2rem;
 }
 
 .c-logo {
@@ -35,7 +36,7 @@ body:after {
 
 .c-leaves {
   width: 600px;
-  position: fixed;
+  position: absolute;
   top: -20px;
   right: -74px;
   z-index: -1;
