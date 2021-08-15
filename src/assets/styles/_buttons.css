@@ -1,16 +1,27 @@
 
 .c-button {
-  font-size: 1.4rem;
-  background-color: var(--color-primary);
+  font-size: 1rem;
+
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 3px;
+  background: var(--color-red);
+  cursor: pointer;
 
   color: white;
   text-decoration: none;
-  padding: .5rem 1.5rem;
+  padding: .4rem 1.2rem;
   display: inline-block;
 
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
 
-  box-shadow: 5px 5px 0 var(--color-primary--dark);
+  &:hover, &:focus, &:active {
+    border: 1px solid rgba(255,255,255,1);
+    background: var(--color-red-light);
+    span {
+      text-decoration: underline;
+
+    }
+  }
 }
 
 

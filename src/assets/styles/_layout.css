@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,19 +22,10 @@ body {
   color: var(--color-text);
 
   background-color: var(--color-background);
-/*
-  background-color: var(--color-background);
-  background-image: url(../images/leaves-top-right.svg);
-  background-position: top -20px right -74px;
-  background-repeat: no-repeat;
-  background-size: 600px auto;
-  background-attachment: fixed;
 
-
-  @media screen and (max-width: 480px) {
-    background-size: 320px auto;
-
-  }*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 html,body {
@@ -81,3 +73,9 @@ button {
 
 }
 
+.s-grid-span {
+  grid-column-start: span var(--grid-columns);
+}
+header,main,footer {
+  z-index: 2;
+}

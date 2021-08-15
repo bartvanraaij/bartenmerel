@@ -15,6 +15,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.4;
   font-family: var(--font-headings);
   margin-bottom: 1rem;
+  color: var(--color-headings);
 }
 
 h1 {
@@ -31,6 +32,7 @@ h2 {
   line-height: 1.2;
 
   @media screen and (max-width: 960px) {
+    font-size: 1.4rem;
     margin-bottom: .25rem;
   }
 }
@@ -46,8 +48,6 @@ h1 + p, h2 + p, h3+p {
 
 h1, h2, h3 {
 }
-
-em {
-  font-style: normal;
-  color: var(--color-primary);
+a {
+  color: white;
 }

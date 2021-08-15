@@ -14,25 +14,29 @@
 </head>
 <body>
 
-<div class="c-boundary"></div>
-<div class="c-leaves">{% include '../partials/leaves-top-right.svg' %}</div>
-
-
-{#<div class="c-blob">#}
-{#  {% include '../partials/blob.svg' %}#}
-{#</div>#}
 
 <header class="c-header">
-  <div class="s-container">
-  <a href="{{ '/'|url }}" title="{{ site.title }}">
-    <img src="/assets/images/bart-en-merel.svg" alt="Bart&Merel" class="c-logo"  />
+
+  <a href="{{ '/'|url }}" title="{{ site.title }}" class="c-logo">
+    <img src="/assets/images/bart-en-merel.svg" alt="Bart & Merel" class="c-logo--img"  />
   </a>
-  </div>
 </header>
 
-<main class="s-container">
+<main class="c-main s-container">
   {{ content | safe }}
 </main>
+
+<footer class="c-footer">
+  <img src="/assets/images/12-11-21.svg" alt="12-11-21" class="c-date-img" />
+</footer>
+
+
+<div class="c-leaves">
+  <img class="c-leaves--svg" src="/assets/images/leaves-top-right.svg" alt="Golden leaves" />
+</div>
+<div class="c-heart">
+  <img class="c-heart--svg" src="/assets/images/heart.svg" alt="Heart" />
+</div>
 
 </body>
 </html>
