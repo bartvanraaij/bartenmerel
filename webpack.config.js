@@ -21,7 +21,7 @@ module.exports = {
   devtool,
   entry: {
     main: path.resolve(__dirname, 'src/assets/styles/main.css'),
-    fonts: path.resolve(__dirname, 'src/assets/styles/fonts.js'),
+    // fonts: path.resolve(__dirname, 'src/assets/styles/fonts.js'),
   },
   output: {
     path: path.resolve(__dirname, '_site/'),

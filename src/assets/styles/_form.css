@@ -3,14 +3,15 @@
   display: block;
 }
 .c-contactform {
-  width: 90%;
+  width: 100%;
+  max-width: 400px;
 
 }
 input[type=radio] {
   background: white;
 }
 
-input[type=text] {
+input[type=text],input[type=email]{
   font-family: var(--font-form);
   background: white;
   border-radius: 3px;

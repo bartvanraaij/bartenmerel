@@ -8,6 +8,7 @@ body {
   color: var(--text);
   */
   font-family: var(--font);
+  text-rendering: optimizeLegibility;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -16,6 +17,7 @@ h1,h2,h3,h4,h5,h6 {
   font-family: var(--font-headings);
   margin-bottom: 1rem;
   color: var(--color-headings);
+
 }
 
 h1 {

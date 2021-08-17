@@ -7,12 +7,14 @@
   --grid-spacer: 2rem;
 
 
-  //--font: 'Source Sans Pro', sans-serif;
   //--font: 'Source Serif Pro', sans-serif;
-  //--font-headings: 'Source Serif Pro', serif;
+
 
   --font:  'Georgia', sans-serif;
   --font-headings:  'Georgia', sans-serif;
+
+
+
   --font-size: 17px;
 
   --font-form:   -apple-system,BlinkMacSystemFont,"Segoe UI", "Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -33,10 +35,13 @@
   --color-white: #fff;
   --color-maroon: #641926;
   --color-sand: #efd4ac;
-  --color-sand-lighter: #fdecd7;
+  --color-sand-lighter: #fff1e8;
 
   --color-background: var(--color-maroon);
   --color-text: var(--color-sand-lighter);
+
+  --color-text: white;
+
   --color-headings: var(--color-white);
 
 

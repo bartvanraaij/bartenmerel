@@ -37,9 +37,9 @@
   width: 280px;
   max-width: 90%;
   display: block;
+  margin-top: 1rem;
 
   @media screen and (max-width: 600px) {
-    margin-top: 1rem;
     width: 220px;
 
   }
@@ -60,6 +60,7 @@ body:after {
 
 
   @media screen and (max-width: 960px) {
+    display: none;
     top: 1rem; left: 1rem;
     right: 1rem;
 
@@ -80,7 +81,7 @@ body:after {
   z-index: 0;
   pointer-events: none;
 
-  svg {
+  img {
     width: 100%;
     height: auto;
   }
@@ -120,4 +121,15 @@ body:after {
     width: 250px;
   }
 
+}
+
+table {
+
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+  scroll-behavior: smooth;
+  td {
+    white-space: nowrap;
+  }
 }
