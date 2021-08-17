@@ -1,33 +1,16 @@
 :root {
   --container: 1024px;
-  //--container-padding: 15px;
-
-
+  
   --grid-columns: 2;
   --grid-spacer: 2rem;
-
-
-  //--font: 'Source Serif Pro', sans-serif;
-
 
   --font:  'Georgia', sans-serif;
   --font-headings:  'Georgia', sans-serif;
 
 
-
   --font-size: 17px;
 
   --font-form:   -apple-system,BlinkMacSystemFont,"Segoe UI", "Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-
-  /* --color-maroon: #82171d;
-   //--color-sand: #efd4ac;
-   --color-gold: #d4af37;*/
-
-
-  //--color-sand: hsl(36, 68%, 81%);
-
-  //--color-watdan: #a12732;
 
   --color-red: #b51d26;
   --color-red-light: #ce3232;
