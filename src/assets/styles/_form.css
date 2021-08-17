@@ -5,6 +5,7 @@
 .c-contactform {
   width: 100%;
   max-width: 400px;
+  margin-top: 1rem;
 
 }
 input[type=radio] {
