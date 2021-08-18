@@ -9,14 +9,14 @@
   <meta name="description" content="{{ description or site.description }}" />
   <meta name="author" content="{{ site.author }}" />
   <link href="{{ assets.main|url }}" rel="stylesheet"/>
-  <link rel="preload" href="{{ assets.fonts|url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ assets.fonts|url }}"></noscript>
+  {% if assets.fonts %}
+    <link rel="preload" href="{{ assets.fonts|url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ assets.fonts|url }}"></noscript>
+  {% endif %}
 </head>
 <body>
 
-
 <header class="c-header">
-
   <a href="{{ '/'|url }}" title="{{ site.title }}" class="c-logo">
     <img src="/assets/images/bart-en-merel.svg" alt="Bart & Merel" class="c-logo--img" width="280" height="132" />
   </a>

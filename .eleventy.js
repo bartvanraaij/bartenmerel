@@ -33,9 +33,9 @@ module.exports = function (eleventyConfig) {
   //   },
   // });
   //
-  // eleventyConfig.addFilter('json', (obj) => {
-  //   return JSON.stringify(obj);
-  // });
+  eleventyConfig.addFilter('json', (obj) => {
+    return JSON.stringify(obj);
+  });
 
   eleventyConfig.addFilter('date', (dateObj, type) => {
     let format;
