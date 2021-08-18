@@ -1,11 +1,11 @@
 :root {
   --container: 1024px;
-  
+
   --grid-columns: 2;
   --grid-spacer: 2rem;
 
-  --font:  'Georgia', sans-serif;
-  --font-headings:  'Georgia', sans-serif;
+  --font: 'Source Serif Pro',   sans-serif;
+  --font-headings: var(--font);
 
 
   --font-size: 17px;
