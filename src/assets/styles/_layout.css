@@ -42,11 +42,6 @@ button {
   font: inherit;
 }
 
-/*.s-main {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}*/
-
 .s-container {
   width: var(--container);
   max-width: 100%;
@@ -54,17 +49,6 @@ button {
   padding-right: var(--container-padding);
   margin: 0 auto;
 }
-
-/*
-.s-container--wider {
-  width: var(--grid-wide);
-}
-
-.s-box {
-  width: var(--grid-small);
-  max-width: 100%;
-}
-*/
 
 .s-grid {
   display: grid;
@@ -74,11 +58,14 @@ button {
 }
 
 .s-grid-span {
-  grid-column-start: span var(--grid-columns);
+  grid-column: 1 / -1;
 }
 header,main,footer {
   z-index: 2;
 }
 .mt {
   margin-top: .25rem;
+}
+.mb {
+  margin-bottom: .5rem;
 }

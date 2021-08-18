@@ -65,9 +65,6 @@ body:after {
     right: 1rem;
 
     border-width: .5px;
-    /*
-    border: 3px solid var(--color-red);
-    */
     height: calc(100% - 2rem);
 
   }
