@@ -50,3 +50,8 @@ h1, h2, h3 {
 a {
   color: white;
 }
+ul {
+  padding-inline-start: 1.2rem;
+  margin-block-start: .75rem;
+  margin-block-end: .75rem;
+}
